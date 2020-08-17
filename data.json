@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "name":"rect1",
+      "image":"img/Rectangle 1.png"
+    },
+    {
+      "name":"rect2",
+      "image":"img/Rectangle 2.png"
+    },
+    {
+      "name":"rect3",
+      "image":"img/Rectangle 3.png"
+    },
+    {
+      "name":"rect4",
+      "image":"img/Rectangle 4.png"
+    },
+    {
+      "name":"rect5",
+      "image":"img/Rectangle 5.png"
+    },
+    {
+      "name":"rect6",
+      "image":"img/Rectangle 6.png"
+    },
+    {
+      "name":"rect7",
+      "image":"img/Rectangle 7.png"
+    },
+    {
+      "name":"rect8",
+      "image":"img/Rectangle 8.png"
+    },
+    {
+      "name":"rect9",
+      "image":"img/Rectangle 9.png"
+    }
+  ]
+}

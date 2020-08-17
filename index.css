@@ -8,72 +8,74 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-content: center;
+
+  align-content: flex-start;
+  justify-content: flex-start;
+
   align-items: center;
-  justify-content: center;
-  justify-items: center;
+  /* justify-items: center; */
+  /* justify-items: flex-start; */
 }
 
 .header {
-  height: var(--header-height);
+  flex: 0 0 auto;
+  margin-top: auto;
+  padding-top: 10px;
+  /* height: var(--header-height); */
 }
 
 .nav {
   display: flex;
 }
 
-.main {
-  height: calc(100vh - var(--header-height) - var(--footer-height));
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
+.selector{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
-
-/* .items {
-  display: grid;
-
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.item_thumbnail {
-  height: 20vh;
-  margin-bottom: 10px;
-} */
 
 .items {
   width: 80%;
-  height: 80%;
+  margin: 20px;
+  margin-right: 0px;
   display: flex;
   flex-wrap: wrap;
 
-  align-content: center;
+  align-content: flex-start;
   align-items: center;
   justify-items: center;
-  padding: 0px;
+  padding: 20px;
   overflow-y: scroll;
 }
 
 .item_thumbnail {
-  flex: 1 1 auto;
+  position: relative;
+  /* flex: 1 1 auto; */
   flex-basis: 30%;
-  width: 20vw;
-  margin: 10px;
+  width: 100%;
+  margin: 0px;
+  /* position: relative; */
 }
 
 /* .item_thumbnail:hover{
   transform: scale(1.1);
+  border-radius: 8px; 
+  box-shadow: 0 0 0 5px red inset;
 } */
-
-.item_thumbnail:active{
-  border-width: thick;
+.item_wrapper:hover{
+  transform: scale(1.1);
+  border-radius: 8px; 
+  box-shadow: 0 0 0 5px red inset;
 }
 
 .footer {
-  height: var(--footer-height)
+  display: flex;
+  width: 80%;
+  height: 50px;
+  margin-bottom: auto;
+  justify-content: flex-end;
+
 }
 
 .logo {
@@ -95,4 +97,31 @@ body {
 }
 
 .footer_logo {
+  /* margin-left: auto; */
+}
+
+.overlay{
+  opacity: 0.5;
+}
+
+.item_wrapper {
+  position: relative;
+  flex: 1 1 auto;
+  flex-basis: 25%;
+  width: 20vw;
+  margin: 20px;
+  padding: 5px 5px 0px 5px;
+}
+
+.selector {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 5vw;
+  height: auto;
+  opacity: 1;
+  margin-left: -2.5vw;
+  margin-top: -2.5vw;
 }
