@@ -3,30 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="result.css">
+  <script src="result.js" defer></script>
   <title>Document</title>
 </head>
 <body>
+  
   <header class="header">
     <img src="component/logo.png" class="logo"/>
     <nav class="nav">
       <div class="nav_tbox">
-        <div class="nav_tbox_text" >가장 마음에 드는 이미지 3장을 골라주세요.</div>
+        <div class="nav_tbox_text" >3장의 이미지로 분석한 좋아하는 이미지 유형 TOP10</div>
       </div>
-      <button type="button" class="nav_btn" onClick="location.href='result.html'" >
+      <button class="nav_btn">
         <div class="nav_btn_text"> 다 음 </div>
       </button>
     </nav>
   </header>
 
-  <ul class="items">
+  <ul class="preview">
+    <img src="img/select/Rectangle 6.png" class="preview_item">
   </ul>
+
+  <ul class="items_wrapper">
+    <ul class="items">
+    </ul>
+  </ul>
+
 
   <footer class="footer">
     <div class="footer_logo"> ⓒ jjokjjipkke </div>
   </footer>
-
-  
 </body>
 </html>
