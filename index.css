@@ -84,24 +84,7 @@ body {
   background: #FFFFFF;
 }
 
-.nav_tbox {
-}
-
-.nav_tbox_text {
-}
-
-.nav_btn {
-}
-
-.nav_btn_text {
-}
-
-.footer_logo {
-  /* margin-left: auto; */
-}
-
-.overlay{
-  opacity: 0.5;
+.overlay{ opacity: 0.5;
 }
 
 .item_wrapper {
@@ -126,3 +109,20 @@ body {
   margin-left: -2.5vw;
   margin-top: -2.5vw;
 }
+
+.preview {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.preview_item{
+  display: flex;
+  width: 80%;
+  align-content: center;
+
+}
+.preview_item_thumbnail {
+  display: flex;
+  flex-flow: wrap;
+} 

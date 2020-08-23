@@ -39,8 +39,8 @@ function setSelectedImageName(items){
   const selectedImageIcon = document.getElementsByClassName(selectedClassName);
   displayPreviewItems(selectedImage.getAttribute('src'));
 
-  selectedImage.classList.add('overlay');
-  selectedImageIcon[0].style.display = "block";
+  selectedImage.classList.remove('overlay');
+  selectedImageIcon[0].style.display = "none";
 }
 
 function onButtonClick(event, items){
